@@ -1,0 +1,12 @@
+username=brianjolly
+password=
+#extern = tee "/Users/brian/Music/LastFM/%a - %l - %t.mp3" | madplay -Q -
+#download = /Users/brian/Music/LastFM/%a;%t;%l;%d.mp3
+# use whatever you like here per guidelines in "$ man shell-fm"
+#default-radio = lastfm://user/johnaman/recommended
+#np-file = /Users/brian/.shell-fm/nowplaying
+np-file-format = %t:%a:%S:%A
+term-format = %a:%l:%t
+delay-change = true
+minimum = 80
+gap = 20

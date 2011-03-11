@@ -1,0 +1,182 @@
+xman*topBox:	false
+xman*bothShown:	true
+
+# URL's in the terminal
+#URxvt*.perl-ext-common:  matcher 
+#URxvt*.urlLauncher:      firefox 
+#URxvt*.matcher.button:   1
+rxvt*foreground:       #00ffff
+rxvt*background:       rgba:0000/0000/0000/4444
+rxvt*transparent:      true
+rxvt*shading:          50
+rxvt*depth:            32
+rxvt*tint:             white 
+rxvt*inheritPixmap:    true
+rxvt*borderless:       true
+rxvt*scrollbar:        false
+rxvt*scrollbar_right:  false
+
+!XTerm*underLine: on
+XTerm*customization: -color
+!XTerm*visualBell: true
+XTerm*colorMode: on
+!XTerm*colorBDMode: off
+XTerm*colorULMode: on
+XTerm*dynamicColors: off
+XTerm*highlightSelection: true
+
+  # dark theme
+  #*background: #1f0000
+  #*background: #21221b
+  #*foreground: #cccccc
+  #
+  #XTerm*color0:  #000000
+  #XTerm*color1:  #dddddd
+  #XTerm*color2:  #dddddd
+  #XTerm*color3:  #dddddd
+  #XTerm*color4:  #999999
+  #XTerm*color5:  #999999
+  #XTerm*color6:  #999999
+  #XTerm*color7:  #555555
+  #XTerm*color8:  #555555
+  #XTerm*color9:  #555555
+  #XTerm*color10: #eeeeee
+  #XTerm*color11: #ccff00
+  #XTerm*color12: #6666ff
+  #XTerm*color13: #cc0033
+  #XTerm*color14: #66ccff
+  #XTerm*color15: #ff6600
+
+  # dark 2
+  #*background: #333333
+  #*foreground: #cccccc
+  #XTerm*color0:  #353535
+  #XTerm*color8:  #666666
+  ##red
+  #XTerm*color1:  #7b3303
+  #XTerm*color9:  #804015
+  ##green
+  #XTerm*color2:  #556B2F
+  #XTerm*color10: #4e6d19
+  ##brown/yellow
+  #XTerm*color3:  #a67b07
+  #XTerm*color11: #a67b07
+  ##blue
+  #XTerm*color4:  #427288
+  #XTerm*color12: #6b94a7
+  ##magenta
+  #XTerm*color5:  #705b46
+  #XTerm*color13: #664a30
+  ##cyan
+  #XTerm*color6:  #A7A15E
+  #XTerm*color14: #F0E68C
+  ##white
+  #XTerm*color7:  #DDDDDD
+  #XTerm*color15: #bcbcbc
+
+  # Dark Theme 3
+  *background: #222222
+  *foreground: #ffffff
+
+  XTerm*color0:  #000000
+  XTerm*color1:  #cc0000
+  XTerm*color2:  #4e9a06
+  XTerm*color3:  #c4a000
+  XTerm*color4:  #3465a4
+  XTerm*color5:  #75507b
+  XTerm*color6:  #06989a
+  XTerm*color7:  #d3d7cf
+  XTerm*color8:  #555753
+  XTerm*color9:  #ef2929
+  XTerm*color10: #8ae234
+  XTerm*color11: #fce94f
+  XTerm*color12: #729fcf
+  XTerm*color13: #ad7fa8
+  XTerm*color14: #34e2e2
+  XTerm*color15: #eeeeec
+
+  # light theme
+  #*background: #eeeeee
+  #*foreground: #6600ff
+  #
+  #XTerm*color0:  #ffffff
+  #XTerm*color1:  #000000
+  #XTerm*color2:  #999999
+  #XTerm*color3:  #666666
+  #XTerm*color4:  #222222
+  #XTerm*color5:  #666666
+  #XTerm*color6:  #555555
+  #XTerm*color7:  #a0a0a0
+  #XTerm*color8:  #333333
+  #XTerm*color9:  #222222
+  #XTerm*color10: #111111
+  #XTerm*color11: #3300ff
+  #XTerm*color12: #004d00
+  #XTerm*color13: #33ffcc
+  #XTerm*color14: #993300
+  #XTerm*color15: #0099ff
+  #XTerm*colorBD: #000000
+  #XTerm*colorUL: #ff0000
+
+  # tan
+  #XTerm*foreground: #696969
+  #XTerm*background: #fffef6
+  #XTerm*color0: #363636
+  #XTerm*color8: #424242
+  #XTerm*color1: #C37561
+  #XTerm*color9:  #D19485
+  #XTerm*color2: #A0A57E
+  #XTerm*color10: #7f8264
+  #XTerm*color3: #b58b62
+  #XTerm*color11: #DEBC9C
+  #XTerm*color4: #1d2b41
+  #XTerm*color12: #98A1B9
+  #XTerm*color5: #AB716D
+  #XTerm*color13: #b4d2c8
+  #XTerm*color6: #98B9B1
+  #XTerm*color14: #769293
+  #XTerm*color7: #9ba0a7
+  #XTerm*color15: #6e7383
+ 
+ 
+!#set the window geometry
+XTerm*geometry: 144x41
+XTerm*scrollBar: false
+
+XTerm*VT100.Translations: #override \
+<KeyPress> Prior: scroll-back(1,page) \n\
+<KeyPress> Next: scroll-forw(1,page) \n\
+! Meta <KeyPress> W: quit() \n\
+Meta <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+<BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n
+
+#XTerm*color3:	#777777
+#XTerm*colorMode:	on
+#XTerm*color1:	#555555
+#XTerm*color4:	#888888
+#XTerm*colorUL:	yellow
+#XTerm*color10:	#eeeeee
+#XTerm*color5:	#999999
+#XTerm*colorULMode:	on
+#XTerm*color11:	#ccff00
+#XTerm*color6:	#aaaaaa
+#XTerm*customization:	-color
+#XTerm*color12:	#6666ff
+#XTerm*color7:	#bbbbbb
+#XTerm*dynamicColors:	off
+#XTerm*color13:	#cc0033
+#XTerm*color8:	#cccccc
+#XTerm*color14:	#66ccff
+#XTerm*geometry:	144x41
+#XTerm*color9:	#dddddd
+#XTerm*highlightSelection:	true
+#XTerm*color15:	#ff6600
+#XTerm*color2:	#666666
+#XTerm*colorBD:	lightyellow
+#XTerm*color0:	#000000
+#XTerm*scrollBar:	false
+
+xrenoise.use_xcursors:	1
+xrenoise.display:	:0.0
+xrenoise.display_resource:	0x00,0x00,0x13,0xC7,0xC0,0x44,0x4E,0xB9
+xrenoise.executable_path:	/usr/local/bin/renoise-2.1.0

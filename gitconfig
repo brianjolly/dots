@@ -1,0 +1,36 @@
+[user]
+	name = Brian Jolly
+	email = brian@brianjolly.com
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+
+[color "branch"]
+  current = 11 
+  local   = 12
+  remote  = 13 
+
+[color "diff"]
+  meta = 4 
+  frag = 12 
+  old =  14 
+  new =  11 
+
+[color "status"]
+  added = 11
+  changed = 12
+  untracked = 7
+
+[core]
+	excludesfile = /Users/brian/.gitignore
+	pager = less -r
+
+[merge]
+	tool = vimdiff
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[apply]
+	whitespace = nowarn
+[github]
+	user = brianjolly
