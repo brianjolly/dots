@@ -1,7 +1,8 @@
 set nocompatible
 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" these two calls were slowing things waaaay down.
+"call pathogen#runtime_append_all_bundles()
+"call pathogen#helptags()
 
 filetype plugin on
 filetype indent on
@@ -9,14 +10,18 @@ filetype indent on
 syntax on
 colo brian
 
+let mapleader = ","
+let g:mapleader = ","
+
+" vjde settings
+au BufNewFile,BufRead *.java set cfu=VjdeCompletionFun
+au BufNewFile,BufRead *.java let g:vjde_lib_path="/home/brian/android_try/android-api/android-src.jar"
+au BufNewFile,BufRead *.java let g:vjde_completion_key='<c-space>'
+
 " ctags for actionscript language
 "let tlist_actionscript_settings = 'actionscript;c:class;f:method;p:property;v:variable'
 " ctags for ant
 "let g:tlist_ant_settings = 'ant;p:Project;t:Target;r:Property'
-
-" remap zencoding expand key
-"let g:user_zen_expandabbr_key = '<c-h>'
-"let g:use_zen_complete_tag = 1
 
 set softtabstop=4
 set shiftwidth=4
@@ -27,14 +32,14 @@ set wildmenu
 set wildmode=longest:full,full
 set wildignore +=*-
 
-au BufNewFile,BufRead *.mxml set filetype=mxml
-au BufNewFile,BufRead *.as set filetype=actionscript
-au BufNewFile,BufRead *.rb set softtabstop=2 shiftwidth=2 tabstop=2 sw=2
+"au BufNewFile,BufRead *.mxml set filetype=mxml
+"au BufNewFile,BufRead *.as set filetype=actionscript
+"au BufNewFile,BufRead *.rb set softtabstop=2 shiftwidth=2 tabstop=2 sw=2
 
 set number
-"set autoindent
-"set expandtab
-"set smarttab
+set autoindent
+set expandtab
+set smarttab
 
 set ignorecase
 set smartcase
@@ -44,9 +49,9 @@ cmap :ntt NERDTreeToggle
 cmap :ntm NERDTreeMirror
 cmap :ntc NERDTreeClose
 cmap :ntf NERDTreeFind
-"cmap :tt  TlistToggle
-"cmap :ff  FufFile
-"cmap :asc exec 'cfile '.fcsh#Compile(["mxmlc", "-debug=true", "-incremental=true", "-benchmark=false", "Main.as"])
+cmap :tt  TlistToggle
+cmap :ff  FufFile
+cmap :asc exec 'cfile '.fcsh#Compile(["mxmlc", "-debug=true", "-incremental=true", "-benchmark=false", "Main.as"])
 
 "FuzzyFinder Options
 "let g:fuf_autoPreview = 1
@@ -81,7 +86,6 @@ autocmd VimEnter * wincmd t
 "let Tlist_Show_One_File = 1
 
 set statusline=
-"set statusline+=%{GitBranchInfoString()}\ 
 set statusline+=%{fugitive#statusline()}\ 
 set statusline+=%f\               "filename
 set statusline+=%y\       "filetype
@@ -90,7 +94,7 @@ set statusline+=[%c,%l]\ %P  "column and line number
 
 "set makeprg=ant
 "set efm=\ %#[mxmlc]\ %f\(%l\):\ col:\ %c\ %m
-set efm=\ %#[javac]\ %#%f:%l:%c:%*\\d:%*\\d:\ %t%[%^:]%#:%m,\%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
+"set efm=\ %#[javac]\ %#%f:%l:%c:%*\\d:%*\\d:\ %t%[%^:]%#:%m,\%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
 
 
 " highlight groups
