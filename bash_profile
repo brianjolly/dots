@@ -21,6 +21,7 @@ alias gts='git status'
 alias gtb='git branch'
 alias gtai='git add -i'
 alias gtcm='git commit -m'
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 
 # android sdk aliases
 alias logcat='/Users/brian/bin/android-sdk-mac_x86/platform-tools/adb logcat'
