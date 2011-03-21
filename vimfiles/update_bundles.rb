@@ -22,6 +22,8 @@ git_bundles = [
   "git://github.com/vim-ruby/vim-ruby.git",
   "git://github.com/tpope/vim-vividchalk.git",
 	"git://github.com/skammer/vim-css-color.git",
+	#"git://github.com/vim-scripts/javacomplete",
+	"git://github.com/vim-scripts/Vim-JDE.git",
 ]
 
 vim_org_scripts = [
