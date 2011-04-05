@@ -1,8 +1,8 @@
 set nocompatible
 
 " these two calls were slowing things waaaay down.
-"call pathogen#runtime_append_all_bundles()
-"call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 filetype plugin on
 filetype indent on
@@ -18,10 +18,13 @@ au BufNewFile,BufRead *.java set cfu=VjdeCompletionFun
 au BufNewFile,BufRead *.java let g:vjde_lib_path="/home/brian/android_try/android-api/android-src.jar"
 au BufNewFile,BufRead *.java let g:vjde_completion_key='<c-space>'
 
+au BufNewFile,BufRead *.less set filetype=less
+
 " ctags for actionscript language
 "let tlist_actionscript_settings = 'actionscript;c:class;f:method;p:property;v:variable'
 " ctags for ant
 "let g:tlist_ant_settings = 'ant;p:Project;t:Target;r:Property'
+set foldmethod=indent
 
 set softtabstop=4
 set shiftwidth=4
@@ -52,6 +55,15 @@ cmap :ntf NERDTreeFind
 cmap :tt  TlistToggle
 cmap :ff  FufFile
 cmap :asc exec 'cfile '.fcsh#Compile(["mxmlc", "-debug=true", "-incremental=true", "-benchmark=false", "Main.as"])
+
+
+" Change selected text from name_like_this to NameLikeThis.
+vnoremap ,c :s/_\([a-z]\)/\u\1/g<CR>gUl
+
+" Change selected text from NameLikeThis to name_like_this.
+vnoremap ,u :s/\<\@!\([A-Z]\)/\_\l\1/g<CR>gul
+
+
 
 "FuzzyFinder Options
 "let g:fuf_autoPreview = 1
