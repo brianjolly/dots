@@ -3,7 +3,7 @@ export MANPATH=/usr/local/man:/opt/local/share/man:$MANPATH
 export CLICOLOR=1
 export PS1=':) $(__git_ps1 "(%s)") '
 export EDITOR=vim
-export DISPLAY=:0
+#export DISPLAY=:0
 export FLEX_HOME="/opt/flex_sdk/"
 export rvm_path=~/.rvm
 
