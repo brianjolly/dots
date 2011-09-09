@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-git_bundles = [ 
-    "git://github.com/astashov/vim-ruby-debugger.git",
+git_bundles = [
+    #"git://github.com/astashov/vim-ruby-debugger.git",
     "git://github.com/msanders/snipmate.vim.git",
     "git://github.com/scrooloose/nerdtree.git",
     "git://github.com/timcharper/textile.vim.git",
@@ -20,19 +20,18 @@ git_bundles = [
     #"git://github.com/tsaleh/vim-supertab.git",
     "git://github.com/tsaleh/vim-tcomment.git",
     "git://github.com/vim-ruby/vim-ruby.git",
-    "git://github.com/tpope/vim-vividchalk.git",
+    #"git://github.com/tpope/vim-vividchalk.git",
     #"git://github.com/vim-scripts/javacomplete",
     "git://github.com/jiangmiao/simple-javascript-indenter.git",
     "git://github.com/vim-scripts/Vim-JDE.git",
     "git://github.com/altercation/vim-colors-solarized.git",
+    "git://github.com/kronn/ack.vim.git",
 ]
+
 
 vim_org_scripts = [
     ["IndexedSearch", "7062",  "plugin"],
-    ["gist",          "12732", "plugin"],
     ["jquery",        "12107", "syntax"],
-    ["python",        "790",   "syntax"],
-
 ]
 
 require 'fileutils'
@@ -60,3 +59,11 @@ vim_org_scripts.each do |name, script_id, script_type|
         file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
     end
 end
+
+# command-t
+`rm -rf ~/.vim/bundle/command-t`
+`git clone git://git.wincent.com/command-t.git ~/.vim/bundle/command-t`
+`cd ~/.vim/bundle/command-t`
+`rake make`
+`cd -`
+

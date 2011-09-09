@@ -13,12 +13,9 @@ colo brian
 let mapleader = ","
 let g:mapleader = ","
 
-" vjde settings
-au BufNewFile,BufRead *.java set cfu=VjdeCompletionFun
-au BufNewFile,BufRead *.java let g:vjde_lib_path="/home/brian/android_try/android-api/android-src.jar"
-au BufNewFile,BufRead *.java let g:vjde_completion_key='<c-space>'
+map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
+map <leader>tg :CommandTFlush<cr>\|:CommandT %%<cr>
 
-au BufNewFile,BufRead *.less set filetype=less
 
 " ctags for actionscript language
 "let tlist_actionscript_settings = 'actionscript;c:class;f:method;p:property;v:variable'
@@ -26,18 +23,26 @@ au BufNewFile,BufRead *.less set filetype=less
 "let g:tlist_ant_settings = 'ant;p:Project;t:Target;r:Property'
 set foldmethod=indent
 
-set softtabstop=4
-set shiftwidth=4
-set tabstop=4
-set sw=4
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
+set sw=2
 
 set wildmenu
 set wildmode=longest:full,full
 set wildignore +=*-
 
-"au BufNewFile,BufRead *.mxml set filetype=mxml
-"au BufNewFile,BufRead *.as set filetype=actionscript
-"au BufNewFile,BufRead *.rb set softtabstop=2 shiftwidth=2 tabstop=2 sw=2
+au BufNewFile,BufRead *.mxml set filetype=mxml
+au BufNewFile,BufRead *.as set filetype=actionscript
+au BufNewFile,BufRead *.rb set softtabstop=2 shiftwidth=2 tabstop=2 sw=2
+au BufNewFile,BufRead Vagrantfile set filetype=ruby
+
+au BufNewFile,BufRead *.less set filetype=less
+
+" vjde settings
+au BufNewFile,BufRead *.java set cfu=VjdeCompletionFun
+au BufNewFile,BufRead *.java let g:vjde_lib_path="/home/brian/android_try/android-api/android-src.jar"
+au BufNewFile,BufRead *.java let g:vjde_completion_key='<c-space>'
 
 set number
 set autoindent
@@ -82,8 +87,8 @@ vnoremap ,u :s/\<\@!\([A-Z]\)/\_\l\1/g<CR>gul
 let g:netrw_liststyle=3
 let g:netrw_browse_split=2
 let g:netrw_altv=1
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd t
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * wincmd t
 
 "This will show 'text' before the branches. If not set ' Git ' (with a trailing 
 "left space) will be displayed. 
@@ -110,18 +115,18 @@ set statusline+=[%c,%l]\ %P  "column and line number
 
 
 " highlight groups
-autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+" autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 
-highlight ExtraWhitespace ctermbg=8 guibg=red
-"match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter,InsertEnter,InsertLeave,BufWinLeave * match ExtraWhitespace /®/
-autocmd BufWinEnter * match ExtraWhitespace /\t/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-
-
+" highlight ExtraWhitespace ctermbg=8 guibg=red
+" "match ExtraWhitespace /\s\+$/
+" autocmd BufWinEnter,InsertEnter,InsertLeave,BufWinLeave * match ExtraWhitespace /®/
+" autocmd BufWinEnter * match ExtraWhitespace /\t/
+" autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+" autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+" autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+" autocmd BufWinLeave * call clearmatches()
+" 
+" 
 
 "set makeprg=rake debug
 "set efm=\ %#[ERROR]\ %f\(%l\):\ col:\ %c\ %m
