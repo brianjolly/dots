@@ -17,10 +17,16 @@ alias rgrep='find . -name \!:2 -exec grep -i \!^ {} /dev/null \;'
 alias webroot='cd /Library/WebServer/Documents'
 alias proj='cd ~/projects'
 alias lsl='ls -l'
+# git shortcuts
 alias gts='git status'
 alias gtb='git branch'
 alias gtai='git add -i'
 alias gtcm='git commit -m'
+
+# apps
+alias safari="open /Applications/Safari.app"
+alias chrome="open /Applications/Google\ Chrome.app"
+
 
 # android sdk aliases
 alias logcat='/Users/brian/bin/android-sdk-mac_x86/platform-tools/adb logcat'

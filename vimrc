@@ -1,22 +1,27 @@
 set nocompatible
 
 " these two calls were slowing things waaaay down.
-"call pathogen#runtime_append_all_bundles()
-"call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 filetype plugin on
 filetype indent on
 
-syntax on
-colo brian
+syntax enable
+ set background=dark
+ colo delek
+" colo default
 
 let mapleader = ","
 let g:mapleader = ","
 
+map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
+map <leader>fg :CommandTFlush<cr>\|:CommandT %%<cr>
+
 " vjde settings
-au BufNewFile,BufRead *.java set cfu=VjdeCompletionFun
-au BufNewFile,BufRead *.java let g:vjde_lib_path="/home/brian/android_try/android-api/android-src.jar"
-au BufNewFile,BufRead *.java let g:vjde_completion_key='<c-space>'
+"au BufNewFile,BufRead *.java set cfu=VjdeCompletionFun
+"au BufNewFile,BufRead *.java let g:vjde_lib_path="/home/brian/android_try/android-api/android-src.jar"
+"au BufNewFile,BufRead *.java let g:vjde_completion_key='<c-space>'
 
 " ctags for actionscript language
 "let tlist_actionscript_settings = 'actionscript;c:class;f:method;p:property;v:variable'
@@ -32,9 +37,13 @@ set wildmenu
 set wildmode=longest:full,full
 set wildignore +=*-
 
-"au BufNewFile,BufRead *.mxml set filetype=mxml
-"au BufNewFile,BufRead *.as set filetype=actionscript
-"au BufNewFile,BufRead *.rb set softtabstop=2 shiftwidth=2 tabstop=2 sw=2
+au BufNewFile,BufRead *.mxml set filetype=mxml
+au BufNewFile,BufRead *.as set filetype=actionscript
+
+au BufNewFile,BufRead *.rb set softtabstop=2 shiftwidth=2 tabstop=2 sw=2
+au BufNewFile,BufRead 'VagrantFile' set ft=ruby 
+au BufNewFile,BufRead [vV]agrantfile set filetype=ruby softtabstop=2 shiftwidth=2 tabstop=2 sw=2
+
 
 set number
 set autoindent
@@ -51,7 +60,7 @@ cmap :ntc NERDTreeClose
 cmap :ntf NERDTreeFind
 cmap :tt  TlistToggle
 cmap :ff  FufFile
-cmap :asc exec 'cfile '.fcsh#Compile(["mxmlc", "-debug=true", "-incremental=true", "-benchmark=false", "Main.as"])
+" cmap :asc exec 'cfile '.fcsh#Compile(["mxmlc", "-debug=true", "-incremental=true", "-benchmark=false", "Main.as"])
 
 "FuzzyFinder Options
 "let g:fuf_autoPreview = 1
@@ -70,8 +79,8 @@ cmap :asc exec 'cfile '.fcsh#Compile(["mxmlc", "-debug=true", "-incremental=true
 let g:netrw_liststyle=3
 let g:netrw_browse_split=2
 let g:netrw_altv=1
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd t
+" autocmd VimEnter * NERDTree
+" autocmd VimEnter * wincmd t
 
 "This will show 'text' before the branches. If not set ' Git ' (with a trailing 
 "left space) will be displayed. 
@@ -98,16 +107,16 @@ set statusline+=[%c,%l]\ %P  "column and line number
 
 
 " highlight groups
-autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-
-highlight ExtraWhitespace ctermbg=8 guibg=red
-"match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter,InsertEnter,InsertLeave,BufWinLeave * match ExtraWhitespace /®/
-autocmd BufWinEnter * match ExtraWhitespace /\t/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
+"autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+"
+"highlight ExtraWhitespace ctermbg=8 guibg=red
+""match ExtraWhitespace /\s\+$/
+"autocmd BufWinEnter,InsertEnter,InsertLeave,BufWinLeave * match ExtraWhitespace /®/
+"autocmd BufWinEnter * match ExtraWhitespace /\t/
+"autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+"autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+"autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+"autocmd BufWinLeave * call clearmatches()
 
 
 

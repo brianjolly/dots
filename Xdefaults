@@ -176,7 +176,3 @@ Meta <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
 #XTerm*color0:	#000000
 #XTerm*scrollBar:	false
 
-xrenoise.use_xcursors:	1
-xrenoise.display:	:0.0
-xrenoise.display_resource:	0x00,0x00,0x13,0xC7,0xC0,0x44,0x4E,0xB9
-xrenoise.executable_path:	/usr/local/bin/renoise-2.1.0

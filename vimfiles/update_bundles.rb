@@ -1,34 +1,33 @@
 #!/usr/bin/env ruby
 
 git_bundles = [ 
-  "git://github.com/astashov/vim-ruby-debugger.git",
-  "git://github.com/msanders/snipmate.vim.git",
-  "git://github.com/scrooloose/nerdtree.git",
-  "git://github.com/timcharper/textile.vim.git",
-  "git://github.com/tpope/vim-cucumber.git",
-  "git://github.com/tpope/vim-fugitive.git",
-  "git://github.com/int3/vim-extradite.git",
-  "git://github.com/tpope/vim-git.git",
-  "git://github.com/tpope/vim-haml.git",
-  "git://github.com/tpope/vim-markdown.git",
-  "git://github.com/tpope/vim-rails.git",
-  "git://github.com/tpope/vim-repeat.git",
-	"git://github.com/tpope/vim-endwise.git",
-  #"git://github.com/tpope/vim-surround.git",
-  #"git://github.com/tsaleh/vim-align.git",
-  #"git://github.com/tsaleh/vim-shoulda.git",
-  #"git://github.com/tsaleh/vim-supertab.git",
-  #"git://github.com/tsaleh/vim-tcomment.git",
-  "git://github.com/vim-ruby/vim-ruby.git",
-  "git://github.com/tpope/vim-vividchalk.git",
-	"git://github.com/skammer/vim-css-color.git",
-	#"git://github.com/vim-scripts/javacomplete",
-	"git://github.com/vim-scripts/Vim-JDE.git",
+    #"git://github.com/astashov/vim-ruby-debugger.git",
+    #"git://github.com/msanders/snipmate.vim.git",
+    "git://github.com/scrooloose/nerdtree.git",
+    #"git://github.com/timcharper/textile.vim.git",
+    #"git://github.com/tpope/vim-cucumber.git",
+    "git://github.com/tpope/vim-fugitive.git",
+    #"git://github.com/int3/vim-extradite.git",
+    #"git://github.com/tpope/vim-git.git",
+    #"git://github.com/tpope/vim-haml.git",
+    #"git://github.com/tpope/vim-markdown.git",
+    "git://github.com/tpope/vim-rails.git",
+    #"git://github.com/tpope/vim-repeat.git",
+    #"git://github.com/tpope/vim-endwise.git",
+    #"git://github.com/mileszs/ack.vim.git",
+    #"git://github.com/altercation/vim-colors-solarized.git",
+    #"git://github.com/tpope/vim-surround.git",
+    #"git://github.com/tsaleh/vim-align.git",
+    #"git://github.com/tsaleh/vim-shoulda.git",
+    #"git://github.com/tsaleh/vim-supertab.git",
+    #"git://github.com/tsaleh/vim-tcomment.git",
+    "git://github.com/vim-ruby/vim-ruby.git",
+    #"git://github.com/tpope/vim-vividchalk.git",
+    #"git://github.com/vim-scripts/javacomplete",
+    #"git://github.com/vim-scripts/Vim-JDE.git",
 ]
 
 vim_org_scripts = [
-  ["IndexedSearch", "7062",  "plugin"],
-  ["gist",          "12732", "plugin"],
   ["jquery",        "12107", "syntax"],
 ]
 
@@ -57,3 +56,7 @@ vim_org_scripts.each do |name, script_id, script_type|
     file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
   end
 end
+
+# git clone git://git.wincent.com/command-t.git ~/.vim/bundle/command-t
+# cd ~/.vim/bundle/command-t
+# rake make
