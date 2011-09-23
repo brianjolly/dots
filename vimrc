@@ -102,12 +102,12 @@ let g:netrw_altv=1
 "let Tlist_Display_Tag_Scope = 1
 "let Tlist_Show_One_File = 1
 
-set statusline=
-set statusline+=%{fugitive#statusline()}\ 
-set statusline+=%f\               "filename
-set statusline+=%y\       "filetype
-set statusline+=%*\       "switch back to normal statusline highlight
-set statusline+=[%c,%l]\ %P  "column and line number
+"set statusline=
+"set statusline+=%{fugitive#statusline()}\ 
+"set statusline+=%f\               "filename
+"set statusline+=%y\       "filetype
+"set statusline+=%*\       "switch back to normal statusline highlight
+"set statusline+=[%c,%l]\ %P  "column and line number
 
 "set makeprg=ant
 "set efm=\ %#[mxmlc]\ %f\(%l\):\ col:\ %c\ %m
