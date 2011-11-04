@@ -51,6 +51,10 @@ au BufNewFile,BufRead *.rb set softtabstop=2 shiftwidth=2 tabstop=2 sw=2
 au BufNewFile,BufRead 'VagrantFile' set ft=ruby 
 au BufNewFile,BufRead [vV]agrantfile set filetype=ruby softtabstop=2 shiftwidth=2 tabstop=2 sw=2
 
+" vjde settings
+au BufNewFile,BufRead *.java set cfu=VjdeCompletionFun
+"au BufNewFile,BufRead *.java let g:vjde_lib_path="/home/brian/android_try/android-api/android-src.jar"
+au BufNewFile,BufRead *.java let g:vjde_completion_key='<c-space>'
 
 set number
 set autoindent
