@@ -7,9 +7,11 @@ call pathogen#helptags()
 filetype plugin on
 filetype indent on
 
+"set fileformats=unix,mac,dos 
+
 syntax enable
  set background=dark
- colo delek
+ colo brian
 " colo default
 
 let mapleader = ","
@@ -27,6 +29,11 @@ map <leader>fg :CommandTFlush<cr>\|:CommandT %%<cr>
 "let tlist_actionscript_settings = 'actionscript;c:class;f:method;p:property;v:variable'
 " ctags for ant
 "let g:tlist_ant_settings = 'ant;p:Project;t:Target;r:Property'
+"
+let g:vimroom_background = "bg"
+
+autocmd FileType actionscript set omnifunc=actionscriptcomplete#CompleteAS
+autocmd FileType actionscript set dictionary=$HOME/.vim/dict/actionscript.dict
 
 set softtabstop=4
 set shiftwidth=4
@@ -60,7 +67,7 @@ cmap :ntc NERDTreeClose
 cmap :ntf NERDTreeFind
 cmap :tt  TlistToggle
 cmap :ff  FufFile
-" cmap :asc exec 'cfile '.fcsh#Compile(["mxmlc", "-debug=true", "-incremental=true", "-benchmark=false", "Main.as"])
+cmap :asc exec 'cfile '.fcsh#Compile(["mxmlc", "-debug=true", "-incremental=true", "-benchmark=false", "Main.as"])
 
 "FuzzyFinder Options
 "let g:fuf_autoPreview = 1
@@ -106,25 +113,12 @@ set statusline+=[%c,%l]\ %P  "column and line number
 "set efm=\ %#[javac]\ %#%f:%l:%c:%*\\d:%*\\d:\ %t%[%^:]%#:%m,\%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
 
 
-" highlight groups
-"autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-"
-"highlight ExtraWhitespace ctermbg=8 guibg=red
-""match ExtraWhitespace /\s\+$/
-"autocmd BufWinEnter,InsertEnter,InsertLeave,BufWinLeave * match ExtraWhitespace /®/
-"autocmd BufWinEnter * match ExtraWhitespace /\t/
-"autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-"autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-"autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-"autocmd BufWinLeave * call clearmatches()
-
-
 
 "set makeprg=rake debug
 "set efm=\ %#[ERROR]\ %f\(%l\):\ col:\ %c\ %m
 
-"map <F2> :exec 'cfile '.fcsh#Compile(["mxmlc", "-load-config+=build.xml", "-debug=true", "-incremental=true", "-benchmark=false"])
-"map <F3> :exec 'cfile '.fcsh#Compile(["mxmlc", "-debug=true", "-incremental=true", "-benchmark=false", "Main.as"])
+map <F2> :exec 'cfile '.fcsh#Compile(["mxmlc", "-load-config+=build.xml", "-debug=true", "-incremental=true", "-benchmark=false"])
+map <F3> :exec 'cfile '.fcsh#Compile(["mxmlc", "-debug=true", "-incremental=true", "-benchmark=false", "Main.as"])
 
 " experimental: run after gui has been started
 " report breakage in this case,  please

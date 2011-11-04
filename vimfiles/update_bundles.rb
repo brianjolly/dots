@@ -25,10 +25,16 @@ git_bundles = [
     #"git://github.com/tpope/vim-vividchalk.git",
     #"git://github.com/vim-scripts/javacomplete",
     #"git://github.com/vim-scripts/Vim-JDE.git",
+    "git://github.com/mikewest/vimroom.git",
+    "git://git.wincent.com/command-t.git",
+    "git://github.com/MarcWeber/vim-addon-fcsh.git",
+    "git://github.com/MarcWeber/vim-addon-mw-utils.git",
+    "git://github.com/MarcWeber/vim-addon-actions.git",
 ]
 
 vim_org_scripts = [
   ["jquery",        "12107", "syntax"],
+  ["actionscript", "1061", "syntax"],
 ]
 
 require 'fileutils'
@@ -57,6 +63,8 @@ vim_org_scripts.each do |name, script_id, script_type|
   end
 end
 
-# git clone git://git.wincent.com/command-t.git ~/.vim/bundle/command-t
-# cd ~/.vim/bundle/command-t
-# rake make
+# build command-t
+puts File.join(File.dirname(__FILE__), "command-t/ruby/command-t")
+FileUtils.cd(File.join(File.dirname(__FILE__), "command-t/ruby/command-t"))
+system("ruby extconf.rb")
+system("rake make")
