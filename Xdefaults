@@ -25,75 +25,26 @@ XTerm*colorULMode: on
 XTerm*dynamicColors: off
 XTerm*highlightSelection: true
 
-  # dark theme
-  #*background: #1f0000
-  #*background: #21221b
-  #*foreground: #cccccc
-  #
-  #XTerm*color0:  #000000
-  #XTerm*color1:  #dddddd
-  #XTerm*color2:  #dddddd
-  #XTerm*color3:  #dddddd
-  #XTerm*color4:  #999999
-  #XTerm*color5:  #999999
-  #XTerm*color6:  #999999
-  #XTerm*color7:  #555555
-  #XTerm*color8:  #555555
-  #XTerm*color9:  #555555
-  #XTerm*color10: #eeeeee
-  #XTerm*color11: #ccff00
-  #XTerm*color12: #6666ff
-  #XTerm*color13: #cc0033
-  #XTerm*color14: #66ccff
-  #XTerm*color15: #ff6600
-
-  # dark 2
-  #*background: #333333
-  #*foreground: #cccccc
-  #XTerm*color0:  #353535
-  #XTerm*color8:  #666666
-  ##red
-  #XTerm*color1:  #7b3303
-  #XTerm*color9:  #804015
-  ##green
-  #XTerm*color2:  #556B2F
-  #XTerm*color10: #4e6d19
-  ##brown/yellow
-  #XTerm*color3:  #a67b07
-  #XTerm*color11: #a67b07
-  ##blue
-  #XTerm*color4:  #427288
-  #XTerm*color12: #6b94a7
-  ##magenta
-  #XTerm*color5:  #705b46
-  #XTerm*color13: #664a30
-  ##cyan
-  #XTerm*color6:  #A7A15E
-  #XTerm*color14: #F0E68C
-  ##white
-  #XTerm*color7:  #DDDDDD
-  #XTerm*color15: #bcbcbc
-
   # Dark Theme 3
   *background: #222222
   *foreground: #ffffff
 
   XTerm*color0:  #000000
-  XTerm*color1:  #cc0000
-  XTerm*color2:  #4e9a06
-  XTerm*color3:  #c4a000
-  XTerm*color4:  #3465a4
-  XTerm*color5:  #75507b
-  XTerm*color6:  #06989a
-  XTerm*color7:  #d3d7cf
-  XTerm*color8:  #555753
-  XTerm*color9:  #ef2929
-  XTerm*color10: #8ae234
-  XTerm*color11: #fce94f
-  XTerm*color12: #729fcf
-  XTerm*color13: #ad7fa8
-  XTerm*color14: #34e2e2
-  XTerm*color15: #eeeeec
+  XTerm*color1:  #824041
+  XTerm*color2:  #758073
+  XTerm*color3:  #807b6b
+  XTerm*color4:  #6b7180
+  XTerm*color5:  #7c6c80
+  XTerm*color6:  #6b7780
+  XTerm*color7:  #dbdbdb
+  XTerm*color8:  #808080
+  XTerm*color9:  #ffcccd
+  XTerm*color10: #d5fdcb
+  XTerm*color11: #c1cb93
+  XTerm*color12: #cbdcff
+  XTerm*color13: #f2cdff
+  XTerm*color14: #caefff
+  XTerm*color15: #ffffff
 
   # light theme
   #*background: #eeeeee
