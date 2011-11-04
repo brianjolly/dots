@@ -1,12 +1,13 @@
-export PATH=~/bin:/usr/local/bin:/opt/local/bin/:/opt/local/sbin:/opt/flex_sdk/bin/:~/brian/tools/go/bin:$PATH
 export MANPATH=/usr/local/man:/opt/local/share/man:$MANPATH
 export CLICOLOR=1
 export PS1=':) $(__git_ps1 "(%s)") '
 export EDITOR=vim
-export DISPLAY=:0
+#export DISPLAY=:0
 export FLEX_HOME="/opt/flex_sdk/"
 export rvm_path=~/.rvm
+#android-sdk-linux_x86
 
+export PATH=~/bin:/usr/local/bin:/opt/local/bin/:/opt/local/sbin:/opt/flex_sdk/bin/:$PATH
 # set vi key bindings in bash
 #set -o vi
 
@@ -32,7 +33,8 @@ alias chrome="open /Applications/Google\ Chrome.app"
 alias logcat='/Users/brian/bin/android-sdk-mac_x86/platform-tools/adb logcat'
 
 # git bash completion
-source ~/.bash_completion.d/git-completion.bash
+#source ~/.bash_completion.d/git-completion.bash
+source ~/.git-completion.bash
 
 # ant bash completion
 if [ -f /opt/local/etc/bash_completion ]; then

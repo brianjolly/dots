@@ -18,7 +18,7 @@ let mapleader = ","
 let g:mapleader = ","
 
 map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
-map <leader>fg :CommandTFlush<cr>\|:CommandT %%<cr>
+map <leader>tg :CommandTFlush<cr>\|:CommandT %%<cr>
 
 " vjde settings
 "au BufNewFile,BufRead *.java set cfu=VjdeCompletionFun
@@ -29,11 +29,12 @@ map <leader>fg :CommandTFlush<cr>\|:CommandT %%<cr>
 "let tlist_actionscript_settings = 'actionscript;c:class;f:method;p:property;v:variable'
 " ctags for ant
 "let g:tlist_ant_settings = 'ant;p:Project;t:Target;r:Property'
-"
+
 let g:vimroom_background = "bg"
 
 autocmd FileType actionscript set omnifunc=actionscriptcomplete#CompleteAS
 autocmd FileType actionscript set dictionary=$HOME/.vim/dict/actionscript.dict
+set foldmethod=indent
 
 set softtabstop=4
 set shiftwidth=4
@@ -46,7 +47,6 @@ set wildignore +=*-
 
 au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript
-
 au BufNewFile,BufRead *.rb set softtabstop=2 shiftwidth=2 tabstop=2 sw=2
 au BufNewFile,BufRead 'VagrantFile' set ft=ruby 
 au BufNewFile,BufRead [vV]agrantfile set filetype=ruby softtabstop=2 shiftwidth=2 tabstop=2 sw=2
@@ -86,8 +86,6 @@ cmap :asc exec 'cfile '.fcsh#Compile(["mxmlc", "-debug=true", "-incremental=true
 let g:netrw_liststyle=3
 let g:netrw_browse_split=2
 let g:netrw_altv=1
-" autocmd VimEnter * NERDTree
-" autocmd VimEnter * wincmd t
 
 "This will show 'text' before the branches. If not set ' Git ' (with a trailing 
 "left space) will be displayed. 
@@ -101,12 +99,12 @@ let g:netrw_altv=1
 "let Tlist_Display_Tag_Scope = 1
 "let Tlist_Show_One_File = 1
 
-set statusline=
-set statusline+=%{fugitive#statusline()}\ 
-set statusline+=%f\               "filename
-set statusline+=%y\       "filetype
-set statusline+=%*\       "switch back to normal statusline highlight
-set statusline+=[%c,%l]\ %P  "column and line number
+"set statusline=
+"set statusline+=%{fugitive#statusline()}\ 
+"set statusline+=%f\               "filename
+"set statusline+=%y\       "filetype
+"set statusline+=%*\       "switch back to normal statusline highlight
+"set statusline+=[%c,%l]\ %P  "column and line number
 
 "set makeprg=ant
 "set efm=\ %#[mxmlc]\ %f\(%l\):\ col:\ %c\ %m
