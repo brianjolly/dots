@@ -46,7 +46,7 @@ set wildmode=longest:full,full
 set wildignore +=*-
 
 au BufNewFile,BufRead *.mxml set filetype=mxml
-au BufNewFile,BufRead *.as set filetype=actionscript
+au BufNewFile,BufRead *.as set filetype=actionscript softtabstop=4 shiftwidth=4 tabstop=4 sw=4
 au BufNewFile,BufRead *.rb set softtabstop=2 shiftwidth=2 tabstop=2 sw=2
 au BufNewFile,BufRead 'VagrantFile' set ft=ruby 
 au BufNewFile,BufRead [vV]agrantfile set filetype=ruby softtabstop=2 shiftwidth=2 tabstop=2 sw=2

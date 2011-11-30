@@ -30,7 +30,7 @@ hi WarningMsg   ctermfg=12    term=NONE cterm=NONE
 hi Special      ctermfg=12    term=NONE cterm=NONE
 
 hi LineNr       ctermfg=8     term=NONE cterm=NONE
-hi Visual       ctermfg=7    ctermbg=5   term=NONE cterm=NONE
+hi Visual       ctermfg=15    ctermbg=1   term=NONE cterm=NONE
 hi Search       ctermfg=7    ctermbg=8    term=NONE cterm=NONE
 
 hi StatusLine   ctermfg=15     ctermbg=1   term=NONE cterm=NONE
