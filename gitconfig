@@ -23,7 +23,7 @@
     untracked = 7
 
 [core]
-    excludesfile = /Users/brian/.gitignore
+	excludesfile = /home/brian/.gitignore_global
     pager = less -r
     editor = vim
 
