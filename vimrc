@@ -10,8 +10,9 @@ filetype indent on
 "set fileformats=unix,mac,dos 
 
 syntax enable
- set background=dark
- colo brian
+"set background=dark
+ colo xoria256
+" colo brian
 " colo default
 
 let mapleader = ","
