@@ -68,7 +68,7 @@ hi Function guifg=#00ffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=14 ctermb
 hi FoldColumn guifg=#ff0000 guibg=#222222 guisp=#222222 gui=NONE ctermfg=196 ctermbg=235 cterm=NONE
 "hi PreProc -- no settings --
 "hi EnumerationName -- no settings --
-hi Visual guifg=#000000 guibg=#00dddd guisp=#00dddd gui=NONE ctermfg=NONE ctermbg=44 cterm=NONE
+hi Visual guifg=#000000 guibg=#ff0000 guisp=#00dddd gui=NONE ctermfg=NONE ctermbg=1 cterm=NONE
 hi MoreMsg guifg=#00ffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=14 ctermbg=NONE cterm=NONE
 "hi SpellCap -- no settings --
 hi VertSplit guifg=#ffffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE

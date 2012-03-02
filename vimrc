@@ -11,7 +11,9 @@ filetype indent on
 
 syntax enable
 "set background=dark
- colo xoria256
+
+colo dw_cyan
+"colo xoria256
 " colo brian
 " colo default
 
