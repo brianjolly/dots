@@ -3,6 +3,7 @@ set nocompatible
 " these two calls were slowing things waaaay down.
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+call pathogen#infect()
 
 filetype plugin on
 filetype indent on
