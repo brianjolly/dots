@@ -45,9 +45,3 @@ vim_org_scripts.each do |name, script_id, script_type|
     file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
   end
 end
-
-# build command-t
-#puts File.join(File.dirname(__FILE__), "command-t/ruby/command-t")
-#FileUtils.cd(File.join(File.dirname(__FILE__), "command-t/ruby/command-t"))
-#system("ruby extconf.rb")
-#system("rake make")
