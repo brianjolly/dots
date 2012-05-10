@@ -13,6 +13,7 @@ git_bundles = [
     "git://github.com/MarcWeber/vim-addon-actions.git",
     "git://github.com/pangloss/vim-javascript.git",
     "git://github.com/kchmck/vim-coffee-script.git",
+    "git://github.com/kien/ctrlp.vim.git"
 ]
 
 vim_org_scripts = [
@@ -46,7 +47,7 @@ vim_org_scripts.each do |name, script_id, script_type|
 end
 
 # build command-t
-puts File.join(File.dirname(__FILE__), "command-t/ruby/command-t")
-FileUtils.cd(File.join(File.dirname(__FILE__), "command-t/ruby/command-t"))
-system("ruby extconf.rb")
-system("rake make")
+#puts File.join(File.dirname(__FILE__), "command-t/ruby/command-t")
+#FileUtils.cd(File.join(File.dirname(__FILE__), "command-t/ruby/command-t"))
+#system("ruby extconf.rb")
+#system("rake make")
