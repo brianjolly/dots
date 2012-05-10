@@ -39,22 +39,22 @@ URxvt.scrollBar: off
 #  *background: #222222
 #  *foreground: #ffffff
 #
-#  XTerm*color0:  #000000
-#  XTerm*color1:  #824041
-#  XTerm*color2:  #758073
-#  XTerm*color3:  #807b6b
-#  XTerm*color4:  #6b7180
-#  XTerm*color5:  #7c6c80
-#  XTerm*color6:  #6b7780
-#  XTerm*color7:  #dbdbdb
-#  XTerm*color8:  #808080
-#  XTerm*color9:  #ffcccd
-#  XTerm*color10: #d5fdcb
-#  XTerm*color11: #c1cb93
-#  XTerm*color12: #cbdcff
-#  XTerm*color13: #f2cdff
-#  XTerm*color14: #caefff
-#  XTerm*color15: #ffffff
+  *color0:  #000000
+  *color1:  #824041
+  *color2:  #758073
+  *color3:  #807b6b
+  *color4:  #6b7180
+  *color5:  #7c6c80
+  *color6:  #6b7780
+  *color7:  #dbdbdb
+  *color8:  #808080
+  *color9:  #ffcccd
+  *color10: #d5fdcb
+  *color11: #c1cb93
+  *color12: #cbdcff
+  *color13: #f2cdff
+  *color14: #caefff
+  *color15: #ffffff
 
 #  # light theme
 #  *background: #eeeeee

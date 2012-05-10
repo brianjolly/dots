@@ -1,5 +1,8 @@
-*.swp
+*.swl
+*.swm
+*.swn
 *.swo
+*.swp
 .DS_Store
 .netrwhist
 vim-addons/*

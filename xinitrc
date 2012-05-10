@@ -1,3 +1,3 @@
-#exec quartz-wm --only-proxy &
-exec /usr/bin/awesome 
-#exec /usr/local/bin/stumpwm
+xmodmap /home/brian/.Xmodmap
+setxkbmap -option ctrl:nocaps
+exec /usr/bin/i3

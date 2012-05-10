@@ -7,13 +7,16 @@ call pathogen#helptags()
 filetype plugin on
 filetype indent on
 
+" Set ctrlp to regexp mode by default
+let g:ctrlp_regexp = 1
+
 "set fileformats=unix,mac,dos 
 
 syntax enable
 "set background=dark
 
-colo dw_cyan
-"colo xoria256
+"colo dw_cyan
+colo xoria256
 " colo brian
 " colo default
 
