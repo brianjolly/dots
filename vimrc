@@ -43,11 +43,18 @@ autocmd FileType actionscript set omnifunc=actionscriptcomplete#CompleteAS
 autocmd FileType actionscript set dictionary=$HOME/.vim/dict/actionscript.dict
 set foldmethod=indent
 
+set autoindent
+
+"set expandtab
+set smarttab
 set softtabstop=4
 set shiftwidth=4
 set tabstop=4
-set sw=4
 
+set number
+
+set ignorecase
+set smartcase
 set wildmenu
 set wildmode=longest:full,full
 set wildignore +=*-
@@ -63,13 +70,6 @@ au BufNewFile,BufRead *.java set cfu=VjdeCompletionFun
 "au BufNewFile,BufRead *.java let g:vjde_lib_path="/home/brian/android_try/android-api/android-src.jar"
 au BufNewFile,BufRead *.java let g:vjde_completion_key='<c-space>'
 
-set number
-set autoindent
-set expandtab
-set smarttab
-
-set ignorecase
-set smartcase
 
 cmap :nt  NERDTree
 cmap :ntt NERDTreeToggle

@@ -2,9 +2,7 @@
     name = Brian Jolly
     email = brian@brianjolly.com
 [color]
-    branch = auto
-    diff = auto
-    status = auto
+    ui = auto
 
 [color "branch"]
     current = 11 
@@ -23,7 +21,7 @@
     untracked = 7
 
 [core]
-	excludesfile = /home/brian/.gitignore_global
+	excludesfile = /home/brian/.gitignore
     pager = less -r
     editor = vim
 
