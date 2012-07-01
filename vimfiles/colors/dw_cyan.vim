@@ -21,12 +21,10 @@ hi Folded guifg=#ff0000 guibg=#222222 guisp=#222222 gui=NONE ctermfg=196 ctermbg
 "hi PreCondit -- no settings --
 "hi Include -- no settings --
 hi TabLineSel guifg=#000000 guibg=#00aaaa guisp=#00aaaa gui=NONE ctermfg=NONE ctermbg=37 cterm=NONE
-hi StatusLineNC guifg=#000000 guibg=#444444 guisp=#444444 gui=NONE ctermfg=NONE ctermbg=238 cterm=NONE
 "hi CTagsMember -- no settings --
 hi NonText guifg=#ffffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE
 "hi CTagsGlobalConstant -- no settings --
 hi DiffText guifg=#ffffff guibg=#333333 guisp=#333333 gui=NONE ctermfg=15 ctermbg=236 cterm=NONE
-hi ErrorMsg guifg=#000000 guibg=#ffffff guisp=#ffffff gui=NONE ctermfg=NONE ctermbg=15 cterm=NONE
 "hi Ignore -- no settings --
 hi Debug guifg=#ffffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE
 hi PMenuSbar guifg=NONE guibg=#000000 guisp=#000000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -37,11 +35,11 @@ hi SpecialChar guifg=#ffffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=15 cte
 hi Todo guifg=#ff0000 guibg=#000000 guisp=#000000 gui=NONE ctermfg=196 ctermbg=NONE cterm=NONE
 hi Special guifg=#ffffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE
 hi LineNr guifg=#008888 guibg=#000000 guisp=#000000 gui=NONE ctermfg=30 ctermbg=NONE cterm=NONE
-hi StatusLine guifg=#000000 guibg=#00ffff guisp=#00ffff gui=NONE ctermfg=NONE ctermbg=14 cterm=NONE
+hi StatusLine guifg=#000000 guibg=#00ffff guisp=#00ffff gui=NONE ctermfg=NONE ctermbg=238 cterm=NONE
+hi StatusLineNC guifg=#000000 guibg=#444444 guisp=#444444 gui=NONE ctermfg=NONE ctermbg=0 cterm=NONE
 hi Normal guifg=#c0c0c0 guibg=#000000 guisp=#000000 gui=NONE ctermfg=7 ctermbg=NONE cterm=NONE
 "hi Label -- no settings --
 "hi CTagsImport -- no settings --
-hi PMenuSel guifg=#000000 guibg=#00ffff guisp=#00ffff gui=NONE ctermfg=NONE ctermbg=14 cterm=NONE
 hi Search guifg=#000000 guibg=#00ffff guisp=#00ffff gui=NONE ctermfg=NONE ctermbg=14 cterm=NONE
 "hi CTagsGlobalVariable -- no settings --
 hi Delimiter guifg=#ffffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE
@@ -69,6 +67,7 @@ hi FoldColumn guifg=#ff0000 guibg=#222222 guisp=#222222 gui=NONE ctermfg=196 cte
 "hi PreProc -- no settings --
 "hi EnumerationName -- no settings --
 hi Visual guifg=#000000 guibg=#ff0000 guisp=#00dddd gui=NONE ctermfg=NONE ctermbg=1 cterm=NONE
+hi ErrorMsg guifg=#000000 guibg=#ff0000 guisp=#00dddd gui=NONE ctermfg=NONE ctermbg=1 cterm=NONE
 hi MoreMsg guifg=#00ffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=14 ctermbg=NONE cterm=NONE
 "hi SpellCap -- no settings --
 hi VertSplit guifg=#ffffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE
@@ -80,6 +79,7 @@ hi Cursor guifg=#ffffff guibg=#444444 guisp=#444444 gui=NONE ctermfg=15 ctermbg=
 "hi SpellLocal -- no settings --
 "hi Error -- no settings --
 hi PMenu guifg=#000000 guibg=#444444 guisp=#444444 gui=NONE ctermfg=NONE ctermbg=238 cterm=NONE
+hi PMenuSel guifg=#000000 guibg=#00ffff guisp=#00ffff gui=NONE ctermfg=NONE ctermbg=0  cterm=NONE
 hi SpecialKey guifg=#00ffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=14 ctermbg=NONE cterm=NONE
 "hi Constant -- no settings --
 "hi DefinedName -- no settings --
