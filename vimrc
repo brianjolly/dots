@@ -16,8 +16,8 @@ syntax enable
 "set background=dark
 
 "colo dw_cyan
-colo xoria256
-" colo brian
+" colo xoria256
+ colo brian
 " colo default
 
 let mapleader = ","

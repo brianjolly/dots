@@ -1,5 +1,5 @@
-  *background: #d9d9d9
-  *foreground: #000c1a
+  Xterm*.background: #000000
+  Xterm*.foreground: #ffffff
  
 URxvt.transparent: true
 !URxvt.shading: 0 to 99 darkens, 101 to 200 lightens

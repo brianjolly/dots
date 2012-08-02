@@ -1,0 +1,3 @@
+keymap  C-e UP
+keymap  C-y DOWN
+keymap  $   LINE_END
