@@ -17,7 +17,7 @@ endif
 let g:colors_name = "brian"
 
 hi Normal       ctermfg=15   term=NONE cterm=NONE
-hi Statement    ctermfg=5   term=NONE cterm=NONE
+hi Statement    ctermfg=9   term=NONE cterm=NONE
 hi Function     ctermfg=11   term=NONE cterm=NONE
 hi Type         ctermfg=4   term=NONE cterm=NONE
 hi Constant     ctermfg=12   term=NONE cterm=NONE

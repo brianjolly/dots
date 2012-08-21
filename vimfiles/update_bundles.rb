@@ -13,6 +13,7 @@ git_bundles = [
     "git://github.com/MarcWeber/vim-addon-actions.git",
     "git://github.com/pangloss/vim-javascript.git",
     "git://github.com/kchmck/vim-coffee-script.git",
+		"git://github.com/vim-scripts/VimClojure.git",
     "git://github.com/kien/ctrlp.vim.git"
 ]
 

@@ -1,3 +1,3 @@
-xmodmap /home/brian/.Xmodmap
+#xmodmap /home/brian/.Xmodmap
 setxkbmap -option ctrl:nocaps
 exec /usr/bin/i3

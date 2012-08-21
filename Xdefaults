@@ -3,12 +3,12 @@
  
 URxvt.transparent: true
 !URxvt.shading: 0 to 99 darkens, 101 to 200 lightens
-URxvt.shading: 20
+URxvt.shading: 10
 URxvt.scrollBar: off
-URxvt.background: #000000
+URxvt.background: #f00000
 URxvt.foreground: #ffffff
 URxvt.color0:  #000000
-URxvt.color1:  #824041
+URxvt.color1:  #960096
 URxvt.color2:  #758073
 URxvt.color3:  #807b6b
 URxvt.color4:  #6b7180
@@ -16,10 +16,10 @@ URxvt.color5:  #7c6c80
 URxvt.color6:  #6b7780
 URxvt.color7:  #dbdbdb
 URxvt.color8:  #808080
-URxvt.color9:  #ffcccd
+URxvt.color9:  #ff3fcd
 URxvt.color10: #d5fdcb
-URxvt.color11: #c1cb93
-URxvt.color12: #cbdcff
+URxvt.color11: #e4ff00
+URxvt.color12: #008fff
 URxvt.color13: #f2cdff
-URxvt.color14: #caefff
+URxvt.color14: #00efff
 URxvt.color15: #ffffff

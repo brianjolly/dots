@@ -160,5 +160,5 @@ bar {
 new_window 1pixel
 
 #exec --no-startup-id feh --bg-fill /home/brian/pic/Tree-Eater2560.jpg --no-fehbg
-exec --no-startup-id feh --bg-fill /home/brian/pic/abstract_heart_wallpaper.jpg --no-fehbg
+exec --no-startup-id feh --bg-fill /home/brian/pic/blue-halo.jpg -no-fehbg
 
