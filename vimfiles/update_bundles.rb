@@ -4,21 +4,13 @@ git_bundles = [
     "git://github.com/tpope/vim-fugitive.git",
     "git://github.com/int3/vim-extradite.git",
     "git://github.com/tpope/vim-git.git",
-    "git://github.com/tpope/vim-rails.git",
-    "git://github.com/vim-ruby/vim-ruby.git",
-    "git://github.com/mikewest/vimroom.git",
-    "git://git.wincent.com/command-t.git",
-    "git://github.com/MarcWeber/vim-addon-fcsh.git",
-    "git://github.com/MarcWeber/vim-addon-mw-utils.git",
-    "git://github.com/MarcWeber/vim-addon-actions.git",
     "git://github.com/pangloss/vim-javascript.git",
-    "git://github.com/kchmck/vim-coffee-script.git",
-		"git://github.com/vim-scripts/VimClojure.git",
     "git://github.com/kien/ctrlp.vim.git"
 ]
 
 vim_org_scripts = [
   ["actionscript", "1061", "syntax"],
+	["CSApprox", "2390", "scripts"]
 ]
 
 require 'fileutils'

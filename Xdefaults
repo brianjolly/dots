@@ -3,7 +3,7 @@
  
 URxvt.transparent: true
 !URxvt.shading: 0 to 99 darkens, 101 to 200 lightens
-URxvt.shading: 10
+URxvt.shading: 40
 URxvt.scrollBar: off
 URxvt.background: #f00000
 URxvt.foreground: #ffffff
