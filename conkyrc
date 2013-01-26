@@ -302,14 +302,14 @@ lua_draw_hook_pre clock_rings
 # stuff after 'TEXT' will be formatted on screen
 TEXT
 # Clock and header
- ${offset 330}${voffset 50}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${voffset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 124}${font GE Inspira:pixelsize=58}${offset -547}${time %A}${font}
-${offset 350}${voffset -100}${font Ubuntu:pixelsize=10}${color FFA300}HD ${offset 9}$color${fs_free /} / ${fs_size /}${offset 30}${color FFA300}RAM ${offset 9}$color$mem / $memmax${offset 30}${color FFA300}CPU ${offset 9}$color${cpu cpu0}%
+ ${offset 330}${voffset 5}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${voffset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 124}${font GE Inspira:pixelsize=58}${offset -547}${time %A}${font}
+${offset 350}${voffset -90}${font Ubuntu:pixelsize=10}${color FFA300}HD ${offset 9}$color${fs_free /} / ${fs_size /}${offset 30}${color FFA300}RAM ${offset 9}$color$mem / $memmax${offset 30}${color FFA300}CPU ${offset 9}$color${cpu cpu0}%
 ${voffset 10}${offset 295}${color 2c2c2c}${hr 4}
 
 ${image ~/.conky/backgrounddd.png}
 
 # Disk usage node
-${offset 350}${voffset 80}${color 4a89a7}${font Santana:size=8:style=Bold}root$color${font Santana:size=8} : ${offset 16}${fs_used /}/${fs_size /}
+${offset 350}${voffset 50}${color 4a89a7}${font Santana:size=8:style=Bold}root$color${font Santana:size=8} : ${offset 16}${fs_used /}/${fs_size /}
 ${offset 350}${voffset 5}${color 46a646}${font Santana:size=8:style=Bold}home$color${font Santana:size=8} : ${offset 7}${fs_used /home}/${fs_size /home}$font
 ${offset 350}${voffset 5}${color e83737}${font Santana:size=8:style=Bold}swap$color${font Santana:size=8} : ${offset 10}${swap} / ${swapfree}$font
 # "Home" node (kernel, etc.)
@@ -322,7 +322,7 @@ ${offset 350}${voffset 0}$color${font Santana:size=8}${color 46a646}Top (RAM) : 
 ${offset 350}${voffset 5}${color 6f6f6f}CPU Usage (${cpu}%) :
 ${offset 350}${voffset -2}$color${font Santana:size=8}${color 2c2c2c}${cpugraph 32,200 2c2c2c 46a646}
 # "Network" node (IP, connections, etc.)
-${offset 350}${voffset 20}$color${font Santana:size=9:style=Bold}IP Address : ${addr eth0}
+${offset 350}${voffset 10}$color${font Santana:size=9:style=Bold}IP Address : ${addr eth0}
 ${offset 350}${voffset 0}$color${font Santana:size=8}TCP Connections : ${tcp_portmon 1 65535 count}
 ${offset 350}${voffset 5}${font Santana:size=8}${color f4732d}Down : ${offset 9}$color${downspeed eth0}/s ${offset 8}${color ebff46}Up : ${offset 9}$color${upspeed eth0} /s
 ${offset 350}${voffset 5}${color 6f6f6f}${font Santana:size=8}Interface eth0 Usage :
