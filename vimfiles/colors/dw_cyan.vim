@@ -77,7 +77,7 @@ hi VertSplit guifg=#ffffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=15 cterm
 hi DiffChange guifg=#00ffff guibg=#333333 guisp=#333333 gui=NONE ctermfg=14 ctermbg=236 cterm=NONE
 hi Cursor guifg=#ffffff guibg=#444444 guisp=#444444 gui=NONE ctermfg=15 ctermbg=238 cterm=NONE
 "hi SpellLocal -- no settings --
-"hi Error -- no settings --
+hi Error guifg=#000000 guibg=#ff0000 guisp=#00dddd gui=NONE ctermfg=NONE ctermbg=1 cterm=NONE
 hi PMenu guifg=#000000 guibg=#444444 guisp=#444444 gui=NONE ctermfg=NONE ctermbg=238 cterm=NONE
 hi PMenuSel guifg=#000000 guibg=#00ffff guisp=#00ffff gui=NONE ctermfg=NONE ctermbg=0  cterm=NONE
 hi SpecialKey guifg=#00ffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=14 ctermbg=NONE cterm=NONE
@@ -89,7 +89,7 @@ hi PMenuThumb guifg=NONE guibg=#008888 guisp=#008888 gui=NONE ctermfg=NONE cterm
 hi MatchParen guifg=#00ffff guibg=#222222 guisp=#222222 gui=NONE ctermfg=14 ctermbg=235 cterm=NONE
 "hi LocalVariable -- no settings --
 "hi Repeat -- no settings --
-"hi SpellBad -- no settings --
+hi SpellBad guifg=#000000 guibg=#ff0000 guisp=#00dddd gui=NONE ctermfg=NONE ctermbg=1 cterm=NONE
 "hi CTagsClass -- no settings --
 hi Directory guifg=#00ffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=14 ctermbg=NONE cterm=NONE
 "hi Structure -- no settings --
@@ -162,4 +162,4 @@ hi taglisttagscope guifg=#000000 guibg=#008700 guisp=#008700 gui=NONE ctermfg=NO
 hi match guifg=#0000FF guibg=#FFFF00 guisp=#FFFF00 gui=bold ctermfg=21 ctermbg=11 cterm=bold
 "hi cdefine -- no settings --
 "hi cinclude -- no settings --
-
+hi DbgCurrent guifg=#000000 guibg=#ff0000 guisp=#00dddd gui=NONE ctermfg=NONE ctermbg=1 cterm=NONE

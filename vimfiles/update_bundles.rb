@@ -5,7 +5,8 @@ git_bundles = [
     "git://github.com/int3/vim-extradite.git",
     "git://github.com/tpope/vim-git.git",
     "git://github.com/pangloss/vim-javascript.git",
-    "git://github.com/kien/ctrlp.vim.git"
+    "git://github.com/kien/ctrlp.vim.git",
+		"git://github.com/joonty/vdebug.git"
 ]
 
 vim_org_scripts = [

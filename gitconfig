@@ -24,6 +24,7 @@
 	excludesfile = /home/brian/.gitignore
 	pager = cat
     editor = vim
+	autocrlf = input
 
 [merge]
     tool = vimdiff
