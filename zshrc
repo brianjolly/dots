@@ -71,10 +71,13 @@ alias open='xdg-open'
 alias rgene="rdesktop -5 -K -r clipboard:CLIPBOARD -g 1200x750 -d EURORSGC_SF 10.80.42.98"
 alias rstage="rdesktop -5 -K -r clipboard:CLIPBOARD -g 1200x750 10.160.50.102"
 alias rdev="rdesktop -5 -K -r clipboard:CLIPBOARD -g 1200x750 10.160.50.103"
+alias rdb="rdesktop -5 -K -r clipboard:CLIPBOARD -g 1200x750 10.160.50.21"
 alias sp='echo "\n\n\n\n\n\n\n"'
+alias x='exit'
 
 function pw {
 	grep -i "$@" $HOME/info/pws | less
+	exit 0
 }
 
 export MARKPATH=$HOME/.marks
@@ -90,6 +93,10 @@ function unmark {
 function marks {
     ls -l $MARKPATH | sed 's/  / /g' | cut -d' ' -f9- | sed 's/ -/\t-/g' && echo
 }
+
+# svn stash
+alias svn-stash='svn diff > stash.patch && svn revert -R .'
+alias svn-stash-apply='patch < stash.patch'
 
 # oracle-xe path
 export PATH=$PATH:$ORACLE_HOME/bin

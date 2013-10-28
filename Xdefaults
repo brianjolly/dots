@@ -1,5 +1,5 @@
-  Xterm*.background: #000000
-  Xterm*.foreground: #ffffff
+Xterm*.background: #000000
+Xterm*.foreground: #ffffff
  
 URxvt.transparent: true
 !URxvt.shading: 0 to 99 darkens, 101 to 200 lightens
@@ -9,7 +9,7 @@ URxvt.background: #f00000
 URxvt.foreground: #ffffff
 URxvt.color0:  #000000
 URxvt.color1:  #960096
-URxvt.color2:  #758073
+URxvt.color2:  #202020
 URxvt.color3:  #807b6b
 URxvt.color4:  #6b7180
 URxvt.color5:  #7c6c80

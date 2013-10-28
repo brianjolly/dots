@@ -58,6 +58,8 @@ set wildmenu
 set wildmode=longest:full,full
 set wildignore +=*-
 
+au BufNewFile,BufRead *.jsp set filetype=xml
+au BufNewFile,BufRead *.jspx set filetype=xml
 au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript softtabstop=4 shiftwidth=4 tabstop=4 sw=4
 au BufNewFile,BufRead *.rb set softtabstop=2 shiftwidth=2 tabstop=2 sw=2

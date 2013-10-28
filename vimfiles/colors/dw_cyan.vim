@@ -17,7 +17,7 @@ hi SignColumn guifg=#ffffff guibg=#111111 guisp=#111111 gui=NONE ctermfg=15 cter
 hi SpecialComment guifg=#ffffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE
 "hi Typedef -- no settings --
 "hi Title -- no settings --
-hi Folded guifg=#ff0000 guibg=#222222 guisp=#222222 gui=NONE ctermfg=196 ctermbg=235 cterm=NONE
+hi Folded guifg=#ff0000 guibg=#000000 guisp=#222222 gui=NONE ctermfg=1 ctermbg=0 cterm=NONE
 "hi PreCondit -- no settings --
 "hi Include -- no settings --
 hi TabLineSel guifg=#000000 guibg=#00aaaa guisp=#00aaaa gui=NONE ctermfg=NONE ctermbg=37 cterm=NONE
@@ -63,7 +63,7 @@ hi ModeMsg guifg=#00ffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=14 ctermbg
 hi CursorColumn guifg=NONE guibg=#001111 guisp=#001111 gui=NONE ctermfg=NONE ctermbg=23 cterm=NONE
 "hi Define -- no settings --
 hi Function guifg=#00ffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=14 ctermbg=NONE cterm=NONE
-hi FoldColumn guifg=#ff0000 guibg=#222222 guisp=#222222 gui=NONE ctermfg=196 ctermbg=235 cterm=NONE
+hi FoldColumn guifg=#ff0000 guibg=#000000 guisp=#222222 gui=NONE ctermfg=196 ctermbg=0 cterm=NONE
 "hi PreProc -- no settings --
 "hi EnumerationName -- no settings --
 hi Visual guifg=#000000 guibg=#ff0000 guisp=#00dddd gui=NONE ctermfg=NONE ctermbg=1 cterm=NONE
