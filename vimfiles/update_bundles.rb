@@ -5,9 +5,9 @@ git_bundles = [
     "git://github.com/int3/vim-extradite.git",
     "git://github.com/tpope/vim-git.git",
     "git://github.com/pangloss/vim-javascript.git",
-    "git://github.com/kien/ctrlp.vim.git",
-		"git://github.com/joonty/vdebug.git"
 ]
+    #"git://github.com/kien/ctrlp.vim.git",
+    #"git://github.com/joonty/vdebug.git"
 
 vim_org_scripts = [
   ["actionscript", "1061", "syntax"],
@@ -31,11 +31,11 @@ git_bundles.each do |url|
   FileUtils.rm_rf(File.join(dir, ".git"))
 end
 
-vim_org_scripts.each do |name, script_id, script_type|
-  puts "  Downloading #{name}"
-  local_file = File.join(name, script_type, "#{name}.vim")
-  FileUtils.mkdir_p(File.dirname(local_file))
-  File.open(local_file, "w") do |file|
-    file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
-  end
-end
+#vim_org_scripts.each do |name, script_id, script_type|
+#  puts "  Downloading #{name}"
+#  local_file = File.join(name, script_type, "#{name}.vim")
+#  FileUtils.mkdir_p(File.dirname(local_file))
+#  File.open(local_file, "w") do |file|
+#    file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
+#  end
+#end

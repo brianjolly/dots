@@ -1,5 +1,7 @@
-ln -s $HOME/dots/conky $HOME/.conky
-ln -s $HOME/dots/conkyrc $HOME/.conkyrc
-
 ln -s $HOME/dots/vimrc $HOME/.vimrc
 ln -s $HOME/dots/vimfiles $HOME/.vim
+ln -s $HOME/dots/.gitconfig $HOME/.gitconfig
+
+cd $HOME/dots/vimfiles
+mkdir bundle
+ruby update_bundles.rb
