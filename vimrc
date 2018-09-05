@@ -38,17 +38,13 @@ map <leader>tg :CommandTFlush<cr>\|:CommandT %%<cr>
 
 let g:vimroom_background = "bg"
 
-autocmd FileType actionscript set omnifunc=actionscriptcomplete#CompleteAS
-autocmd FileType actionscript set dictionary=$HOME/.vim/dict/actionscript.dict
-set foldmethod=indent
-
 set autoindent
 
-"set expandtab
+set expandtab
 set smarttab
-set softtabstop=4
-set shiftwidth=4
-set tabstop=4
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
 
 set number
 
@@ -58,10 +54,10 @@ set wildmenu
 set wildmode=longest:full,full
 set wildignore +=*-
 
+au BufNewFile,BufRead *.scss set filetype=scss
 au BufNewFile,BufRead *.jsp set filetype=xml
 au BufNewFile,BufRead *.jspx set filetype=xml
 au BufNewFile,BufRead *.mxml set filetype=mxml
-au BufNewFile,BufRead *.as set filetype=actionscript softtabstop=4 shiftwidth=4 tabstop=4 sw=4
 au BufNewFile,BufRead *.rb set softtabstop=2 shiftwidth=2 tabstop=2 sw=2
 au BufNewFile,BufRead *.pp set softtabstop=2 shiftwidth=2 tabstop=2 sw=2 filetype=ruby
 au BufNewFile,BufRead 'VagrantFile' set ft=ruby 
@@ -72,6 +68,13 @@ au BufNewFile,BufRead *.java set cfu=VjdeCompletionFun
 "au BufNewFile,BufRead *.java let g:vjde_lib_path="/home/brian/android_try/android-api/android-src.jar"
 au BufNewFile,BufRead *.java let g:vjde_completion_key='<c-space>'
 
+
+autocmd FileType actionscript set omnifunc=actionscriptcomplete#CompleteAS
+autocmd FileType actionscript set dictionary=$HOME/.vim/dict/actionscript.dict
+
+autocmd FileType scss setlocal commentstring=/*\ %s\ */
+
+set foldmethod=indent
 
 cmap :nt  NERDTree
 cmap :ntt NERDTreeToggle
